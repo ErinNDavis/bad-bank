@@ -4,7 +4,6 @@ const HashRouter  = ReactRouterDOM.HashRouter;
 const UserContext = React.createContext(null);
 
 function Spa() {
-
   return (
     <HashRouter>
       <div>
@@ -15,7 +14,7 @@ function Spa() {
             <Route path="/" exact    component={Home}     />
             <Route path="/about/"    component={About}    />          
             <Route path="/products/" component={Products} />
-            </UserContext.Provider>
+          </UserContext.Provider>
       </div>
     </HashRouter>
   );
